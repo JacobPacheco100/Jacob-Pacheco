@@ -23,12 +23,17 @@
       transform-origin: 0 50%;
       color: $black;
     }
+    // underline : mobile view
+    a {
+      border-bottom: 0.5px solid black;
+    }
     @media (min-width: $laptop) {
       // main-mt
       margin-top: 150px;
       a {
         text-align: left;
         line-height: 1;
+        border: none;
       }
     }
     @media (min-width: $desktop) {
@@ -69,6 +74,9 @@
       .text {
         margin-right: 20px;
         height: 45px;
+      }
+      strong {
+        display: block;
       }
       span {
         font-weight: 200;
