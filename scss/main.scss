@@ -1,0 +1,24 @@
+@import "root/mixins";
+@import "root/colors";
+@import "root/fonts";
+@import "root/buttons";
+@import "root/content-groups";
+
+// components
+@import "components/container";
+@import "components/navbar";
+@import "components/footer";
+
+// pages
+
+@import "page-styles/home";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $bg;
+}

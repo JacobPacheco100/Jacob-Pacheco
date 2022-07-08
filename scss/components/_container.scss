@@ -1,0 +1,5 @@
+.container {
+  width: 85%;
+  max-width: $large;
+  @include margin-center;
+}

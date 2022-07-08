@@ -1,0 +1,71 @@
+// WORKSPACE FONT ( uncomment and commet next FF )
+
+@font-face {
+  font-family: "akira";
+  src: url("../../fonts/akira_expanded_demo-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// @font-face {
+//   font-family: "akira";
+//   src: url("/Portfolio/fonts/akira_expanded_demo-webfont.woff2") format("woff2"),
+//     url("/Portfolio/fonts/akira_expanded_demo-webfont.woff") format("woff");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// font-family: 'akira', sans-serif;
+
+// monrope
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600;700;800&display=swap");
+// font-family: 'Manrope', sans-serif;
+
+// ================================= font-styles =================================
+
+html {
+  font-size: 16px;
+  font-family: "Manrope", sans-serif;
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+// attribute style
+
+.h1-akira {
+  font-family: "akira";
+  font-size: 6rem;
+  line-height: 0.1;
+}
+
+.h2-akira {
+  font-family: "akira";
+  font-size: 2.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+p {
+  color: $p;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  font-weight: 300;
+}
