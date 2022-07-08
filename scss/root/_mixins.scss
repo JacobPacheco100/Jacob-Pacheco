@@ -14,3 +14,11 @@ $large: 1200px;
   margin-right: auto;
   margin-left: auto;
 }
+
+// flex mixins : flex | justify | align | direction
+@mixin flex-between-center-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}

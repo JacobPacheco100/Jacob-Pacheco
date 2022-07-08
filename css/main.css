@@ -19,8 +19,23 @@ a {
 
 .h1-akira {
   font-family: "akira";
-  font-size: 6rem;
-  line-height: 0.1;
+  font-size: 2rem;
+  line-height: 0.8;
+}
+@media (min-width: 481px) {
+  .h1-akira {
+    font-size: 3.3rem;
+  }
+}
+@media (min-width: 769px) {
+  .h1-akira {
+    font-size: 5.3rem;
+  }
+}
+@media (min-width: 1025px) {
+  .h1-akira {
+    font-size: 7.5rem;
+  }
 }
 
 .h2-akira {
@@ -94,10 +109,122 @@ p {
   margin-right: auto;
   margin-left: auto;
 }
+@media (max-width: 320px) {
+  .container {
+    width: 90%;
+  }
+}
 
-nav {
-  background: red;
-  height: 100px;
+nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 20px;
+}
+@media (min-width: 481px) {
+  nav .navbar {
+    padding-top: 40px;
+  }
+}
+nav .logo {
+  width: 3rem;
+}
+nav #menu-icon {
+  font-size: 2rem;
+}
+nav #menu-icon:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 769px) {
+  .home-body nav {
+    display: none;
+  }
+}
+.home-body main {
+  margin-top: 100px;
+}
+.home-body main a {
+  text-align: center;
+  display: block;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  line-height: 2;
+}
+.home-body main a:not(:first-child) {
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+}
+.home-body main a:hover {
+  transform: scale(1.1);
+  transform-origin: 0 50%;
+  color: #141414;
+}
+@media (min-width: 769px) {
+  .home-body main {
+    margin-top: 150px;
+  }
+  .home-body main a {
+    text-align: left;
+    line-height: 1;
+  }
+}
+@media (min-width: 1025px) {
+  .home-body main a {
+    text-align: left;
+    line-height: 0.9;
+  }
+}
+.home-body footer {
+  display: none;
+}
+@media (min-width: 769px) {
+  .home-body footer {
+    display: block;
+  }
+}
+.home-body footer .flex-container {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+.home-body footer .flex-container .logo {
+  transform: scale(1.5);
+  margin-right: 50px;
+  margin-left: 20px;
+}
+.home-body footer .flex-container .logo:hover svg {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: scale(1.2);
+}
+.home-body footer .flex-container .logo:hover svg path {
+  fill: none;
+  stroke: black;
+  stroke-width: 0.5px;
+}
+.home-body footer .flex-container .text {
+  margin-right: 20px;
+  height: 45px;
+}
+.home-body footer .flex-container span {
+  font-weight: 200;
+  font-size: 14px;
+}
+.home-body footer .flex-container .socials {
+  fill: blue;
+}
+.home-body footer .flex-container .socials svg {
+  margin-left: 15px;
+  width: 25px;
+  height: 25px;
+}
+.home-body footer .flex-container .socials a:hover svg {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: scale(1.2);
+}
+.home-body footer .flex-container .socials a:hover svg path {
+  fill: red;
 }
 
 * {

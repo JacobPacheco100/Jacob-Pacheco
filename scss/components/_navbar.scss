@@ -1,0 +1,18 @@
+nav {
+  .navbar {
+    @include flex-between-center-row;
+    padding-top: 20px;
+    @media (min-width: $tablet) {
+      padding-top: 40px;
+    }
+  }
+  .logo {
+    width: 3rem;
+  }
+  #menu-icon {
+    font-size: 2rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

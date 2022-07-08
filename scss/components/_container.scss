@@ -2,4 +2,7 @@
   width: 85%;
   max-width: $large;
   @include margin-center;
+  @media (max-width: $mobile) {
+    width: 90%;
+  }
 }

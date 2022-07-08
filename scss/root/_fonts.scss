@@ -39,8 +39,17 @@ a {
 
 .h1-akira {
   font-family: "akira";
-  font-size: 6rem;
-  line-height: 0.1;
+  font-size: 2rem;
+  line-height: 0.8;
+  @media (min-width: $tablet) {
+    font-size: 3.3rem;
+  }
+  @media (min-width: $laptop) {
+    font-size: 5.3rem;
+  }
+  @media (min-width: $desktop) {
+    font-size: 7.5rem;
+  }
 }
 
 .h2-akira {
@@ -69,3 +78,5 @@ p {
   line-height: 1.7;
   font-weight: 300;
 }
+
+// class styles
