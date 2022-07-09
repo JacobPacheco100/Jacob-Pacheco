@@ -147,6 +147,127 @@ nav #menu-icon:hover {
   cursor: pointer;
 }
 
+.footer-wrap {
+  background: #141414;
+}
+
+footer {
+  margin-top: 1000px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+  padding-top: 80px;
+  color: #c4c4c4;
+}
+footer .next {
+  color: #c4c4c4;
+  -webkit-text-stroke: 0.1px black;
+  font-size: 2rem;
+  right: 0;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-bottom: 70px;
+}
+footer .next:hover {
+  transform: scale(1.05);
+  transform-origin: 100% 50%;
+  color: red;
+}
+@media (min-width: 481px) {
+  footer .next {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 769px) {
+  footer .next {
+    font-size: 4rem;
+  }
+}
+footer .flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .flex-container .logo {
+  transform: scale(1.5);
+  margin-bottom: 70px;
+}
+footer .flex-container .logo:hover svg {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: scale(1.2);
+}
+footer .flex-container .logo:hover svg path {
+  fill: none;
+  stroke: #c4c4c4;
+  stroke-width: 0.5px;
+}
+footer .flex-container .text {
+  margin-bottom: 70px;
+  text-align: center;
+  height: 45px;
+}
+footer .flex-container strong {
+  display: block;
+}
+footer .flex-container span {
+  font-weight: 200;
+  font-size: 14px;
+}
+footer .flex-container .socials a:not(:last-child) svg {
+  margin-right: 15px;
+}
+footer .flex-container .socials svg {
+  width: 25px;
+  height: 25px;
+}
+footer .flex-container .socials a:hover svg {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: scale(1.2);
+}
+footer .flex-container .socials a:hover svg path {
+  fill: red;
+}
+footer svg path {
+  fill: #c4c4c4;
+}
+@media (min-width: 1025px) {
+  footer {
+    display: block;
+    padding: 10px 0;
+  }
+  footer .next {
+    position: absolute;
+    margin: 0;
+    bottom: 20px;
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 1025px) and (min-width: 1190px) {
+  footer .next {
+    font-size: 4.5rem;
+  }
+}
+@media (min-width: 1025px) {
+  footer .flex-container {
+    flex-direction: row;
+  }
+  footer .flex-container .logo,
+footer .flex-container .text,
+footer .flex-container .socials {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  footer .flex-container .logo {
+    margin-right: 50px;
+    margin-left: 20px;
+  }
+  footer .flex-container .text {
+    text-align: left;
+    margin-right: 40px;
+  }
+}
+
 @media (min-width: 769px) {
   .home-body nav {
     display: none;
@@ -189,58 +310,58 @@ nav #menu-icon:hover {
     line-height: 0.9;
   }
 }
-.home-body footer {
+.home-body .home-footer {
   display: none;
 }
 @media (min-width: 769px) {
-  .home-body footer {
+  .home-body .home-footer {
     display: block;
   }
 }
-.home-body footer .flex-container {
+.home-body .home-footer .flex-container {
   position: absolute;
   bottom: 50px;
   display: flex;
   align-items: center;
 }
-.home-body footer .flex-container .logo {
+.home-body .home-footer .flex-container .logo {
   transform: scale(1.5);
   margin-right: 50px;
   margin-left: 20px;
 }
-.home-body footer .flex-container .logo:hover svg {
+.home-body .home-footer .flex-container .logo:hover svg {
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   transform: scale(1.2);
 }
-.home-body footer .flex-container .logo:hover svg path {
+.home-body .home-footer .flex-container .logo:hover svg path {
   fill: none;
   stroke: black;
   stroke-width: 0.5px;
 }
-.home-body footer .flex-container .text {
+.home-body .home-footer .flex-container .text {
   margin-right: 20px;
   height: 45px;
 }
-.home-body footer .flex-container strong {
+.home-body .home-footer .flex-container strong {
   display: block;
 }
-.home-body footer .flex-container span {
+.home-body .home-footer .flex-container span {
   font-weight: 200;
   font-size: 14px;
 }
-.home-body footer .flex-container .socials {
+.home-body .home-footer .flex-container .socials {
   fill: blue;
 }
-.home-body footer .flex-container .socials svg {
+.home-body .home-footer .flex-container .socials svg {
   margin-left: 15px;
   width: 25px;
   height: 25px;
 }
-.home-body footer .flex-container .socials a:hover svg {
+.home-body .home-footer .flex-container .socials a:hover svg {
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   transform: scale(1.2);
 }
-.home-body footer .flex-container .socials a:hover svg path {
+.home-body .home-footer .flex-container .socials a:hover svg path {
   fill: red;
 }
 

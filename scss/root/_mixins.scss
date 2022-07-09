@@ -22,3 +22,9 @@ $large: 1200px;
   align-items: center;
   flex-direction: row;
 }
+
+// akira outline
+@mixin akira-outline {
+  color: transparent;
+  -webkit-text-stroke: 0.5px $black;
+}
