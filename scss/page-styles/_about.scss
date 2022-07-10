@@ -1,2 +1,96 @@
 .about-body {
+  // banner | top
+  .banner {
+    width: 100%;
+    height: 567px;
+    background: $black;
+
+    margin-bottom: 150px;
+  }
+
+  //   selfie
+  .selfie {
+    height: 306px;
+    background: $gray;
+
+    margin-bottom: 130px;
+  }
+
+  section {
+    .text-group {
+      margin-inline: auto;
+      max-width: 680px;
+    }
+    margin-bottom: 150px;
+  }
+
+  // skills
+
+  //skills | skill-group | skill / skill-flip-x
+
+  .skills {
+    margin-inline: auto;
+    padding: 0 30px;
+
+    .skill-group:first-child {
+      margin-bottom: 80px;
+    }
+
+    strong {
+      display: block;
+      font-size: 1.2rem;
+    }
+
+    .skill {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+
+      i {
+        font-size: 24px;
+      }
+
+      p {
+        margin: 0 20px;
+      }
+    }
+    // flip settings
+
+    .skill-group:first-child {
+      strong {
+        text-align: right;
+      }
+      .skill {
+        flex-direction: row-reverse;
+      }
+    }
+    // media
+    @media (min-width: $tablet) {
+      display: flex;
+      justify-content: space-between;
+      width: 450px;
+
+      .skill {
+        margin-top: 40px;
+
+        i {
+          font-size: 40px;
+        }
+      }
+    }
+    @media (min-width: $desktop) {
+      width: 520px;
+      .skill {
+        margin-top: 50px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      i {
+        font-size: 50px;
+      }
+    }
+  }
 }

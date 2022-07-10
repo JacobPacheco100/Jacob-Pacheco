@@ -1,123 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Document</title>
-  </head>
-  <body class="about-body">
-    <nav>
-      <div class="container navbar">
-        <a class="btn-box" href="/index.html"
-          ><img class="logo" src="img/brand/logo-light.svg" alt="logo"
-        /></a>
-        <div class="btn-box">
-          <div id="#menu-icon" class="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- banner -->
-    <div class="banner"></div>
-
-    <!-- selfie -->
-    <section class="container">
-      <div class="selfie"></div>
-    </section>
-
-    <!-- who -->
-    <section class="container">
-      <div class="text-group">
-        <h2>Jacob Pacheco</h2>
-        <p>
-          My names Jacob. I started designing when i was 15 to make extra cash
-          as a kid. By sheer luck it feels like, it worked out. I gained a
-          consistent client base, and truely fell in love with the process. Fast
-          foward a year, i found out about web Developement, and decided to make
-          this into a career. Learning & writing code and combining it with fun
-          design is my passion.
-        </p>
-      </div>
-    </section>
-
-    <!-- what -->
-    <section class="container">
-      <div class="text-group">
-        <h2>Frontend Developer</h2>
-        <p>
-          I am a Web Developer / graphic designer with 3 years of client work
-          expirience. My service is developing and or designing stylish fully
-          functional responsive websites with strategy in mind for growing your
-          business
-        </p>
-      </div>
-    </section>
-
-    <!-- skills -->
-    <section class="container">
-      <div class="skills">
-        <!-- tools -->
-        <div class="skill-group">
-          <strong>ToolKit</strong>
-          <div class="skill skill-flip-x">
-            <i class="bx bxl-adobe"></i>
-            <p>Photoshop</p>
-          </div>
-          <div class="skill skill-flip-x">
-            <i class="bx bxl-figma"></i>
-            <p>Figma</p>
-          </div>
-          <div class="skill skill-flip-x">
-            <i class="bx bxl-git"></i>
-            <p>Git</p>
-          </div>
-          <div class="skill skill-flip-x">
-            <i class="bx bxl-bootstrap"></i>
-            <p>Bootstrap</p>
-          </div>
-        </div>
-        <!-- line -->
-        <div class="verticalLine"></div>
-        <!-- languages -->
-        <div class="skill-group">
-          <strong>Languages</strong>
-          <div class="skill">
-            <i class="bx bxl-html5"></i>
-            <p>Html</p>
-          </div>
-          <div class="skill">
-            <i class="bx bxl-css3"></i>
-            <p>Css</p>
-          </div>
-          <div class="skill">
-            <i class="bx bxl-sass"></i>
-            <p>Sass</p>
-          </div>
-          <div class="skill">
-            <i class="bx bxl-javascript"></i>
-            <p>Javascript</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="footer-wrap">
+ 
+ <!-- footer -->
+ <div class="footer-wrap">
       <footer class="container">
-        <a href="#"><h1 class="h2-akira next">contact</h1></a>
+        <a href="#"><h1 class="h2-akira next">projects</h1></a>
         <div class="flex-container">
           <a href="/index.html" class="logo">
             <svg
@@ -225,5 +110,34 @@
         </div>
       </footer>
     </div>
-  </body>
-</html>
+
+
+<!-- navbar | home -->
+<nav>
+      <div class="container navbar">
+        <a href="/index.html"
+          ><img class="logo" src="img/brand/logo.svg" alt="logo"
+        /></a>
+        <i id="menu-icon" class="bx bx-menu"></i>
+      </div>
+    </nav>
+
+
+<!-- navbar | inner -->
+<nav>
+      <div class="container navbar">
+        <a class="btn-box" href="/index.html"
+          ><img class="logo" src="img/brand/logo-light.svg" alt="logo"
+        /></a>
+        <div class="btn-box">
+          <div id="#menu-icon" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+

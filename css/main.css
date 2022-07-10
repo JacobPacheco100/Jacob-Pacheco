@@ -21,31 +21,7 @@ a {
   font-family: "akira";
   font-size: 2rem;
   line-height: 0.8;
-}
-@media (min-width: 320px) {
-  .h1-akira {
-    font-size: 2.5rem;
-  }
-}
-@media (min-width: 481px) {
-  .h1-akira {
-    font-size: 3.5rem;
-  }
-}
-@media (min-width: 580px) {
-  .h1-akira {
-    font-size: 4rem;
-  }
-}
-@media (min-width: 769px) {
-  .h1-akira {
-    font-size: 5.3rem;
-  }
-}
-@media (min-width: 1025px) {
-  .h1-akira {
-    font-size: 7.5rem;
-  }
+  font-size: clamp(2rem, 6.5vw + 1rem, 7.5rem);
 }
 
 .h2-akira {
@@ -125,6 +101,10 @@ p {
   }
 }
 
+nav {
+  position: absolute;
+  width: 100%;
+}
 nav .navbar {
   display: flex;
   justify-content: space-between;
@@ -138,13 +118,46 @@ nav .navbar {
   }
 }
 nav .logo {
-  width: 3rem;
+  width: 2.6rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-nav #menu-icon {
-  font-size: 2rem;
+nav .hamburger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 16px;
 }
-nav #menu-icon:hover {
+nav .hamburger:hover {
   cursor: pointer;
+}
+nav .hamburger div {
+  height: 21%;
+  width: 100%;
+  background: rgb(186, 186, 186);
+}
+nav .btn-box {
+  position: relative;
+  width: 100px;
+  border-radius: 40px;
+  height: 40px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+nav .btn-box:hover {
+  background: #141414;
+  cursor: pointer;
+}
+@media (max-width: 481px) {
+  nav .btn-box {
+    background: none;
+  }
 }
 
 .footer-wrap {
@@ -152,7 +165,6 @@ nav #menu-icon:hover {
 }
 
 footer {
-  margin-top: 1000px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -268,8 +280,29 @@ footer .flex-container .socials {
   }
 }
 
+.home-body .nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 20px;
+}
+@media (min-width: 481px) {
+  .home-body .nav .navbar {
+    padding-top: 40px;
+  }
+}
+.home-body .nav .logo {
+  width: 3rem;
+}
+.home-body .nav #menu-icon {
+  font-size: 2rem;
+}
+.home-body .nav #menu-icon:hover {
+  cursor: pointer;
+}
 @media (min-width: 769px) {
-  .home-body nav {
+  .home-body .nav {
     display: none;
   }
 }
@@ -363,6 +396,80 @@ footer .flex-container .socials {
 }
 .home-body .home-footer .flex-container .socials a:hover svg path {
   fill: red;
+}
+
+.about-body .banner {
+  width: 100%;
+  height: 567px;
+  background: #141414;
+  margin-bottom: 150px;
+}
+.about-body .selfie {
+  height: 306px;
+  background: #c4c4c4;
+  margin-bottom: 130px;
+}
+.about-body section {
+  margin-bottom: 150px;
+}
+.about-body section .text-group {
+  margin-inline: auto;
+  max-width: 680px;
+}
+.about-body .skills {
+  margin-inline: auto;
+  padding: 0 30px;
+}
+.about-body .skills .skill-group:first-child {
+  margin-bottom: 80px;
+}
+.about-body .skills strong {
+  display: block;
+  font-size: 1.2rem;
+}
+.about-body .skills .skill {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.about-body .skills .skill i {
+  font-size: 24px;
+}
+.about-body .skills .skill p {
+  margin: 0 20px;
+}
+.about-body .skills .skill-group:first-child strong {
+  text-align: right;
+}
+.about-body .skills .skill-group:first-child .skill {
+  flex-direction: row-reverse;
+}
+@media (min-width: 481px) {
+  .about-body .skills {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+  }
+  .about-body .skills .skill {
+    margin-top: 40px;
+  }
+  .about-body .skills .skill i {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1025px) {
+  .about-body .skills {
+    width: 520px;
+  }
+  .about-body .skills .skill {
+    margin-top: 50px;
+  }
+  .about-body .skills p {
+    font-size: 20px;
+  }
+  .about-body .skills i {
+    font-size: 50px;
+  }
 }
 
 * {

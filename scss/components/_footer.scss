@@ -2,7 +2,6 @@
   background: $black;
 }
 footer {
-  margin-top: 1000px;
   position: relative;
   display: flex; //
   flex-direction: column; //
@@ -23,7 +22,7 @@ footer {
     &:hover {
       transform: scale(1.05);
       transform-origin: 100% 50%;
-      color: red;
+      color: $primary;
     }
     @media (min-width: $tablet) {
       font-size: 3rem;

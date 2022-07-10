@@ -41,21 +41,22 @@ a {
   font-family: "akira";
   font-size: 2rem;
   line-height: 0.8;
-  @media (min-width: $mobile) {
-    font-size: 2.5rem;
-  }
-  @media (min-width: $tablet) {
-    font-size: 3.5rem;
-  }
-  @media (min-width: 580px) {
-    font-size: 4rem;
-  }
-  @media (min-width: $laptop) {
-    font-size: 5.3rem;
-  }
-  @media (min-width: $desktop) {
-    font-size: 7.5rem;
-  }
+  font-size: clamp(2rem, 6.5vw + 1rem, 7.5rem);
+  // @media (min-width: $mobile) {
+  //   font-size: 2.5rem;
+  // }
+  // @media (min-width: $tablet) {
+  //   font-size: 3.5rem;
+  // }
+  // @media (min-width: 580px) {
+  //   font-size: 4rem;
+  // }
+  // @media (min-width: $laptop) {
+  //   font-size: 5.3rem;
+  // }
+  // @media (min-width: $desktop) {
+  //   font-size: 7.5rem;
+  // }
 }
 
 .h2-akira {
