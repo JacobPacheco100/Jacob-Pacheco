@@ -10,8 +10,7 @@ footer {
   padding-top: 80px;
   //   next button + color
   .next {
-    color: $gray;
-    -webkit-text-stroke: 0.1px black;
+    color: $bg;
     font-size: 2rem;
     // position: absolute; //
     // bottom: -35px; //
@@ -21,7 +20,7 @@ footer {
 
     &:hover {
       transform: scale(1.05);
-      transform-origin: 100% 50%;
+      transform-origin: 50% 100%;
       color: $primary;
     }
     @media (min-width: $tablet) {
@@ -40,13 +39,19 @@ footer {
       transform: scale(1.5);
       margin-bottom: 70px;
 
+      path {
+        fill: none;
+        stroke: $gray;
+        stroke-width: 0.5px;
+      }
+
       &:hover svg {
         transition: $trans1;
         transform: scale(1.2);
         path {
-          fill: none;
-          stroke: $gray;
-          stroke-width: 0.5px;
+          fill: $bg;
+
+          stroke-width: 0px;
         }
       }
     }
@@ -72,6 +77,9 @@ footer {
       svg {
         width: 25px;
         height: 25px;
+        path {
+          fill: $bg;
+        }
       }
 
       a:hover svg {
@@ -84,21 +92,21 @@ footer {
     }
   }
   //   left : colors
-  color: $gray;
+  color: $bg;
   svg path {
-    fill: $gray;
+    fill: $bg;
   }
 
   @media (min-width: $desktop) {
     display: block;
-    padding: 10px 0;
+    padding: 30px 0;
     .next {
       position: absolute;
       margin: 0;
-      bottom: 20px;
+      bottom: 15px;
       font-size: 3.5rem;
       @media (min-width: 1190px) {
-        font-size: 4.5rem;
+        font-size: 6.5rem;
       }
     }
 
@@ -120,4 +128,9 @@ footer {
       }
     }
   }
+}
+.graytainer {
+  background: $primary;
+  height: 300px;
+  width: 100%;
 }

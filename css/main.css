@@ -173,11 +173,10 @@ footer {
   align-items: center;
   padding-bottom: 100px;
   padding-top: 80px;
-  color: #c4c4c4;
+  color: #f5f5f5;
 }
 footer .next {
-  color: #c4c4c4;
-  -webkit-text-stroke: 0.1px black;
+  color: #f5f5f5;
   font-size: 2rem;
   right: 0;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
@@ -185,8 +184,8 @@ footer .next {
 }
 footer .next:hover {
   transform: scale(1.05);
-  transform-origin: 100% 50%;
-  color: #3c4acf;
+  transform-origin: 50% 100%;
+  color: #929aef;
 }
 @media (min-width: 481px) {
   footer .next {
@@ -207,14 +206,18 @@ footer .flex-container .logo {
   transform: scale(1.5);
   margin-bottom: 70px;
 }
+footer .flex-container .logo path {
+  fill: none;
+  stroke: #c4c4c4;
+  stroke-width: 0.5px;
+}
 footer .flex-container .logo:hover svg {
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   transform: scale(1.2);
 }
 footer .flex-container .logo:hover svg path {
-  fill: none;
-  stroke: #c4c4c4;
-  stroke-width: 0.5px;
+  fill: #f5f5f5;
+  stroke-width: 0px;
 }
 footer .flex-container .text {
   margin-bottom: 70px;
@@ -235,31 +238,34 @@ footer .flex-container .socials svg {
   width: 25px;
   height: 25px;
 }
+footer .flex-container .socials svg path {
+  fill: #f5f5f5;
+}
 footer .flex-container .socials a:hover svg {
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   transform: scale(1.2);
 }
 footer .flex-container .socials a:hover svg path {
-  fill: #3c4acf;
+  fill: #929aef;
 }
 footer svg path {
-  fill: #c4c4c4;
+  fill: #f5f5f5;
 }
 @media (min-width: 1025px) {
   footer {
     display: block;
-    padding: 10px 0;
+    padding: 30px 0;
   }
   footer .next {
     position: absolute;
     margin: 0;
-    bottom: 20px;
+    bottom: 15px;
     font-size: 3.5rem;
   }
 }
 @media (min-width: 1025px) and (min-width: 1190px) {
   footer .next {
-    font-size: 4.5rem;
+    font-size: 6.5rem;
   }
 }
 @media (min-width: 1025px) {
@@ -280,6 +286,12 @@ footer .flex-container .socials {
     text-align: left;
     margin-right: 40px;
   }
+}
+
+.graytainer {
+  background: #929aef;
+  height: 300px;
+  width: 100%;
 }
 
 .home-body .nav .navbar {
@@ -397,16 +409,19 @@ footer .flex-container .socials {
   transform: scale(1.2);
 }
 .home-body .home-footer .flex-container .socials a:hover svg path {
-  fill: #3c4acf;
+  fill: #929aef;
 }
 
 .work-body .img {
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  transition-duration: 1.5s;
+  transition-duration: 0.9s;
 }
 .work-body .img:hover {
-  transform: scale(1.02);
+  transform: scale(0.95);
   cursor: pointer;
+}
+.work-body .img a {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
 .work-body .project1 {
   margin-bottom: 200px;
@@ -480,9 +495,11 @@ footer .flex-container .socials {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
 }
-.work-body .project2 .img div {
+.work-body .project2 .img a {
   background: #c4c4c4;
   aspect-ratio: 1/1.3;
+  background: url(../../img/work/audiophile-ss.png);
+  background-size: cover;
 }
 @media (min-width: 769px) {
   .work-body .project2 .project-info {
@@ -519,10 +536,9 @@ footer .flex-container .socials {
   margin-bottom: 200px;
 }
 .work-body .project3 .text-btn-group {
-  text-align: center;
+  text-align: left;
   margin-bottom: 4rem;
   max-width: 600px;
-  margin-inline: auto;
 }
 .work-body .project3 .img {
   height: 350px;
@@ -538,7 +554,7 @@ footer .flex-container .socials {
   margin-bottom: 200px;
 }
 .work-body .project4 .text-btn-group {
-  text-align: center;
+  text-align: left;
   margin-bottom: 4rem;
   max-width: 600px;
   margin-inline: auto;
@@ -548,13 +564,14 @@ footer .flex-container .socials {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
 }
-.work-body .project4 .img div {
+.work-body .project4 .img a {
   background: #c4c4c4;
   aspect-ratio: 1/0.6;
+  background: url(../../img/work/bookmark-ss.png);
+  background-size: cover;
 }
 @media (min-width: 1025px) {
   .work-body .project4 .text-btn-group {
-    text-align: left;
     margin-inline: 0;
   }
   .work-body .project4 .img {
@@ -567,7 +584,10 @@ footer .flex-container .socials {
 .about-body .banner {
   width: 100%;
   height: 567px;
-  background: #141414;
+  background: url(../../img/about/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   margin-bottom: 150px;
 }
 .about-body .selfie {
@@ -676,7 +696,7 @@ footer .flex-container .socials {
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   }
   .contact-body main .socials a:hover svg path {
-    fill: #3c4acf;
+    fill: #929aef;
   }
 }
 .contact-body main .email {
@@ -722,7 +742,7 @@ footer .flex-container .socials {
 .contact-body main form button {
   border: none;
   border-radius: 5px;
-  background: #3c4acf;
+  background: #929aef;
   color: white;
   font-weight: 600;
   font-size: 18px;

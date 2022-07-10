@@ -3,7 +3,10 @@
   .banner {
     width: 100%;
     height: 567px;
-    background: $black;
+    background: url(../../img/about/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
     margin-bottom: 150px;
   }
