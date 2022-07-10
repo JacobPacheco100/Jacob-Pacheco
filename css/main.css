@@ -186,7 +186,7 @@ footer .next {
 footer .next:hover {
   transform: scale(1.05);
   transform-origin: 100% 50%;
-  color: red;
+  color: #3c4acf;
 }
 @media (min-width: 481px) {
   footer .next {
@@ -240,7 +240,7 @@ footer .flex-container .socials a:hover svg {
   transform: scale(1.2);
 }
 footer .flex-container .socials a:hover svg path {
-  fill: red;
+  fill: #3c4acf;
 }
 footer svg path {
   fill: #c4c4c4;
@@ -397,9 +397,17 @@ footer .flex-container .socials {
   transform: scale(1.2);
 }
 .home-body .home-footer .flex-container .socials a:hover svg path {
-  fill: red;
+  fill: #3c4acf;
 }
 
+.work-body .img {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-duration: 1.5s;
+}
+.work-body .img:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
 .work-body .project1 {
   margin-bottom: 200px;
   background: #141414;
@@ -615,6 +623,15 @@ footer .flex-container .socials {
     font-size: 40px;
   }
 }
+@media (min-width: 769px) {
+  .about-body .skills .skill {
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .about-body .skills .skill:hover {
+    cursor: default;
+    transform: scale(1.1);
+  }
+}
 @media (min-width: 1025px) {
   .about-body .skills {
     width: 520px;
@@ -628,6 +645,90 @@ footer .flex-container .socials {
   .about-body .skills i {
     font-size: 50px;
   }
+}
+
+.contact-body main {
+  padding-top: 20vh;
+  text-align: center;
+  max-width: 750px;
+  margin-bottom: 200px;
+}
+.contact-body main .socials {
+  margin-top: 3.3rem;
+}
+.contact-body main .socials a,
+.contact-body main .socials a svg {
+  transform: scale(1.3);
+}
+.contact-body main .socials a:not(:last-child) {
+  margin-right: 20px;
+}
+@media (min-width: 481px) {
+  .contact-body main .socials a,
+.contact-body main .socials a svg {
+    transform: scale(1.5);
+  }
+  .contact-body main .socials a:not(:last-child) {
+    margin-right: 40px;
+  }
+  .contact-body main .socials a:hover svg {
+    transform: scale(1.7);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .contact-body main .socials a:hover svg path {
+    fill: #3c4acf;
+  }
+}
+.contact-body main .email {
+  display: inline-block;
+  margin-top: 60px;
+  padding: 15px 0;
+  width: 100%;
+  max-width: 380px;
+  background: #ebebeb;
+  color: #a0a0a0;
+  margin-bottom: 80px;
+  border-radius: 5px;
+}
+.contact-body main .email:hover {
+  cursor: pointer;
+  background: #e3e5fb;
+}
+.contact-body main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-body main form input,
+.contact-body main form textarea {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background: #ebebeb;
+  height: 60px;
+  margin-bottom: 20px;
+  padding: 20px;
+  color: #141414;
+  font-weight: 300;
+}
+.contact-body main form input:placeholder-shown,
+.contact-body main form textarea:placeholder-shown {
+  color: #969696;
+  font-weight: 300;
+}
+.contact-body main form textarea {
+  height: 230px;
+}
+.contact-body main form button {
+  border: none;
+  border-radius: 5px;
+  background: #3c4acf;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 15px 0;
+  width: 100%;
+  max-width: 400px;
 }
 
 * {

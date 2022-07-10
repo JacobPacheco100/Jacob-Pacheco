@@ -1,4 +1,14 @@
 .work-body {
+  // all imgs scale
+  .img {
+    transition: $trans1;
+    transition-duration: 1.5s;
+    &:hover {
+      transform: scale(1.02);
+      cursor: pointer;
+    }
+  }
+  // project 1
   .project1 {
     margin-bottom: 200px;
     background: $black;
@@ -43,7 +53,7 @@
       }
     }
   }
-
+  // project 2
   .project2 {
     margin-bottom: 200px;
     .project-info {
@@ -114,7 +124,7 @@
       }
     }
   }
-
+  // project 3
   .project3 {
     margin-bottom: 200px;
     .text-btn-group {
@@ -134,7 +144,7 @@
       }
     }
   }
-
+  // project 4
   .project4 {
     margin-bottom: 200px;
     .text-btn-group {

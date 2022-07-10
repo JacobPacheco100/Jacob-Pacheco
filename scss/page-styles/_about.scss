@@ -78,6 +78,15 @@
         }
       }
     }
+    @media (min-width: $laptop) {
+      .skill {
+        transition: $trans1;
+        &:hover {
+          cursor: default;
+          transform: scale(1.1);
+        }
+      }
+    }
     @media (min-width: $desktop) {
       width: 520px;
       .skill {
