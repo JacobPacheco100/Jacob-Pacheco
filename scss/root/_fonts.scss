@@ -1,31 +1,31 @@
 // WORKSPACE FONT ( uncomment and commet next FF )
 
-@font-face {
-  font-family: "akira";
-  src: url("../../fonts/akira_expanded_demo-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 // @font-face {
 //   font-family: "akira";
-//   src: url("/Portfolio/fonts/akira_expanded_demo-webfont.woff2") format("woff2"),
-//     url("/Portfolio/fonts/akira_expanded_demo-webfont.woff") format("woff");
+//   src: url("../../fonts/akira_expanded_demo-webfont.woff") format("woff");
 //   font-weight: normal;
 //   font-style: normal;
 // }
+
+@font-face {
+  font-family: "akira";
+  src: url("/Portfolio/fonts/akira_expanded_demo-webfont.woff2") format("woff2"),
+    url("/Portfolio/fonts/akira_expanded_demo-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 // font-family: 'akira', sans-serif;
 
 // monrope
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600;700;800&display=swap");
 // font-family: 'Manrope', sans-serif;
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap");
 // ================================= font-styles =================================
 
 html {
   font-size: 16px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 li,

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap");
 @font-face {
   font-family: "akira";
   src: url("../../fonts/akira_expanded_demo-webfont.woff") format("woff");
@@ -7,7 +8,7 @@
 }
 html {
   font-size: 16px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 li,
@@ -600,7 +601,7 @@ footer .flex-container .socials {
 }
 .about-body section .text-group {
   margin-inline: auto;
-  max-width: 680px;
+  max-width: 705px;
 }
 .about-body .skills {
   margin-inline: auto;
@@ -620,6 +621,7 @@ footer .flex-container .socials {
 }
 .about-body .skills .skill i {
   font-size: 24px;
+  color: #929aef;
 }
 .about-body .skills .skill p {
   margin: 0 20px;
