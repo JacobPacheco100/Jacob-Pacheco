@@ -498,7 +498,7 @@ footer .flex-container .socials {
 .work-body .project2 .img a {
   background: #c4c4c4;
   aspect-ratio: 1/1.3;
-  background: url(../../img/work/audiophile-ss.png);
+  background: url("../../img/work/audiophile-ss.png");
   background-size: cover;
 }
 @media (min-width: 769px) {
@@ -567,7 +567,7 @@ footer .flex-container .socials {
 .work-body .project4 .img a {
   background: #c4c4c4;
   aspect-ratio: 1/0.6;
-  background: url(../../img/work/bookmark-ss.png);
+  background: url("../../img/work/bookmark-ss.png");
   background-size: cover;
 }
 @media (min-width: 1025px) {
