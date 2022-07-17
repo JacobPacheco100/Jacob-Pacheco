@@ -584,7 +584,7 @@ footer .flex-container .socials {
 .about-body .banner {
   width: 100%;
   height: 567px;
-  background: url(../../img/about/banner.jpg);
+  background: url("../../img/about/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
