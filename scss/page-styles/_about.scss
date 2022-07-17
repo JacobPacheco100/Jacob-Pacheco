@@ -21,10 +21,49 @@
 
   section {
     .text-group {
-      margin-inline: auto;
-      max-width: 705px;
+      max-width: 730px;
+      text-align: left;
+      position: relative;
     }
     margin-bottom: 150px;
+  }
+
+  // showmore
+  .show-more {
+    position: absolute;
+    bottom: -50px;
+    right: 20px;
+    // style
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+    i {
+      transition: $trans1;
+      visibility: hidden;
+      transform: translateX(0px) scale(0);
+    }
+    &:hover {
+      cursor: pointer;
+      i {
+        transform: translateX(6px) scale(1.2);
+        visibility: visible;
+      }
+    }
+  }
+
+  .rotate {
+    transform: rotate(180deg);
+  }
+
+  .more-info {
+    display: none;
+    transition: $trans1;
+  }
+
+  .show-more-info {
+    display: block;
+    transform: translateX(0px);
   }
 
   // skills
