@@ -2,11 +2,13 @@
 const showMoreBTN = document.querySelector(".show-more")
 const moreInfo = document.querySelector(".more-info")
 
-showMoreBTN.addEventListener("click", () => {
+showMoreBTN.addEventListener("click", (e) => {
+  const btn = e.target
   moreInfo.classList.toggle("show-more-info")
-  if (showMoreBTN.textContent === "show more") {
-    showMoreBTN.textContent === "show less"
+
+  if (btn.textContent === "show more") {
+    btn.textContent = "show less"
   } else {
-    showMoreBTN.textContent === "show more"
+    btn.textContent = "show more"
   }
 })

@@ -38,7 +38,7 @@
           <p>
             Send me an email if you have any questions or are interested in
             starting a project. Or if you prefer, we can do busyness through
-            upwork / twitter
+            upwork / twitter 
           </p>
         </div>
         <div class="socials">
@@ -125,12 +125,17 @@
           </a>
         </div>
         <span class="email">jacobpachecoofficial@gmail.com</span>
-        <form action="#">
-          <input placeholder="Email" type="text" />
+        <form
+          action="https://formsubmit.co/jacobpachecoofficial@gmail.com"
+          method="POST"
+        >
+          <input placeholder="Full Name" name="Name" type="text" required />
+          <input placeholder="Email" name="Email" type="text" required />
           <textarea
             placeholder="Message"
-            name="message"
+            name="Message"
             id="message"
+            required
           ></textarea>
           <button type="submit">Send</button>
         </form>
