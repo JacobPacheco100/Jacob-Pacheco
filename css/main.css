@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap");
 @font-face {
   font-family: "akira";
-  src: url("../fonts/akira_expanded_demo-webfont.woff") format("woff");
+  src: url("/../fonts/akira_expanded_demo-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -273,8 +273,8 @@ footer svg path {
     flex-direction: row;
   }
   footer .flex-container .logo,
-  footer .flex-container .text,
-  footer .flex-container .socials {
+footer .flex-container .text,
+footer .flex-container .socials {
     margin-bottom: 0;
     margin-top: 0;
   }
@@ -421,8 +421,7 @@ footer svg path {
   cursor: pointer;
 }
 .work-body .img a {
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
-    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
 .work-body .project1 {
   margin-bottom: 200px;
@@ -717,7 +716,7 @@ footer svg path {
 }
 @media (min-width: 481px) {
   .contact-body main .socials a,
-  .contact-body main .socials a svg {
+.contact-body main .socials a svg {
     transform: scale(1.5);
   }
   .contact-body main .socials a:not(:last-child) {
