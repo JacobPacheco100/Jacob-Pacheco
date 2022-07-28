@@ -15,7 +15,10 @@
   // project 1
   .project1 {
     margin-bottom: 200px;
-    background: $black;
+    background: url('../img/work/audiophile-header-sml.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
     .container {
       position: relative;
       height: 800px;
@@ -46,10 +49,22 @@
       }
     }
 
+    @media (min-width:1300px) {
+      background: url('../img/work/audiophile-header.jpg');
+    }
+
     @media (min-width: $tablet) {
+      .text-btn-group {
+        bottom: 350px;
+    }
+  }
+
+    @media (min-width: 1300px) {
+
       .text-btn-group {
         max-width: 400px;
         text-align: left;
+        bottom: 100px;
         right: 0;
         p {
           display: block;
@@ -57,93 +72,131 @@
       }
     }
   }
-  // project 2
-  .project2 {
+
+  // project 2 : audiophile
+  // .project2 {
+  //   margin-bottom: 200px;
+  //   .project-info {
+  //     margin-bottom: 100px;
+  //   }
+  //   .text-btn-group {
+  //     margin-bottom: 4rem;
+  //     .h2-akira {
+  //       font-size: 2rem;
+  //       @media (min-width: 400px) {
+  //         font-size: 2.5rem;
+  //       }
+  //     }
+  //     max-width: 400px;
+  //   }
+  //   ul {
+  //     padding-left: 1rem;
+  //     font-weight: 300;
+  //     li {
+  //       list-style: disc;
+  //       &:not(:last-child) {
+  //         margin-bottom: 20px;
+  //       }
+  //     }
+  //   }
+  //   .img {
+  //     display: grid;
+  //     grid-template-columns: 1fr;
+  //     grid-template-rows: 1fr;
+  //     a {
+  //       background: $gray;
+  //       aspect-ratio: 1 / 1.3;
+  //       background: url('../img/work/audiophile-ss.png');
+  //       background-size: cover;
+  //     }
+  //   }
+  //   @media (min-width: $laptop) {
+  //     .project-info {
+  //       display: flex;
+
+  //       ul {
+  //         margin-left: 50px;
+  //       }
+  //     }
+  //   }
+
+  //   @media (min-width: $desktop) {
+  //     .content {
+  //       display: flex;
+  //       justify-content: space-between;
+  //       flex-direction: row-reverse;
+  //     }
+  //     .project-info {
+  //       margin-top: 100px;
+  //       display: block;
+
+  //       ul {
+  //         margin-left: 0;
+  //       }
+  //     }
+  //     .img {
+  //       width: 60%;
+  //     }
+
+  //     @media (max-width: 1370px) {
+  //       .project-info {
+  //         margin-top: 50px;
+  //         padding-left: 50px;
+  //       }
+  //     }
+  //   }
+  // }
+
+
+    // project 5 : gameshow
+  .project5 {
     margin-bottom: 200px;
-    .project-info {
-      margin-bottom: 100px;
-    }
     .text-btn-group {
+      margin-inline: auto;
+      text-align: center;
       margin-bottom: 4rem;
-      .h2-akira {
-        font-size: 2rem;
-        @media (min-width: 400px) {
-          font-size: 2.5rem;
-        }
-      }
-      max-width: 400px;
-    }
-    ul {
-      padding-left: 1rem;
-      font-weight: 300;
-      li {
-        list-style: disc;
-        &:not(:last-child) {
-          margin-bottom: 20px;
-        }
-      }
+      max-width: 750px;
     }
     .img {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
+      margin-inline: auto;
+
+      width: 100%;
+      max-width: 700px;
+      height: 500px;
       a {
-        background: $gray;
-        aspect-ratio: 1 / 1.3;
-        background: url('../img/work/audiophile-ss.png');
-        background-size: cover;
-      }
-    }
-    @media (min-width: $laptop) {
-      .project-info {
-        display: flex;
-
-        ul {
-          margin-left: 50px;
-        }
-      }
-    }
-
-    @media (min-width: $desktop) {
-      .content {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row-reverse;
-      }
-      .project-info {
-        margin-top: 100px;
         display: block;
+        background: url('../img/work/gameshow-app.png');
+        background-size: cover;
+        background-position: 0% 50%;
 
-        ul {
-          margin-left: 0;
-        }
+        height: 100%;
+        width: 100%;
       }
+    }
+    @media (min-width: $desktop) {
       .img {
-        width: 60%;
-      }
+        height: 813px;
 
-      @media (max-width: 1370px) {
-        .project-info {
-          margin-top: 50px;
-          padding-left: 50px;
-        }
       }
     }
   }
-  // project 3
+
+
+  // project 3 : devjobs
   .project3 {
     margin-bottom: 200px;
     .text-btn-group {
-      text-align: left;
+      text-align: center;
+      margin-inline: auto;
       margin-bottom: 4rem;
-      max-width: 600px;
+      max-width: 750px;
     }
     .img {
       height: 250px;
       width: 100%;
       a {
         display: block;
-        background: url('../img/work/devjobs-desktop.png');
+        background: url('../img/work/devjobs-mobile.png');
         background-size: cover;
 
         height: 100%;
@@ -152,17 +205,19 @@
     }
     @media (min-width: $desktop) {
       .img {
-        height: 350px;
+        height: 500px;
       }
     }
   }
-  // project 4
+
+
+  // project 4 : bookmark
   .project4 {
     margin-bottom: 200px;
     .text-btn-group {
       text-align: left;
       margin-bottom: 4rem;
-      max-width: 600px;
+      max-width: 700px;
       margin-inline: auto;
     }
     .img {
@@ -181,7 +236,7 @@
         margin-inline: 0;
       }
       .img {
-        max-width: 80%;
+        max-width: 85%;
         margin-left: auto;
         margin-top: -40px;
       }
