@@ -185,7 +185,7 @@ footer .next {
 footer .next:hover {
   transform: scale(1.05);
   transform-origin: 50% 100%;
-  color: #ff334b;
+  color: rgb(85, 77, 229);
 }
 @media (min-width: 481px) {
   footer .next {
@@ -246,7 +246,7 @@ footer .flex-container .socials a:hover svg {
   transform: scale(1.2);
 }
 footer .flex-container .socials a:hover svg path {
-  fill: #ff334b;
+  fill: rgb(85, 77, 229);
 }
 footer svg path {
   fill: #f5f5f5;
@@ -289,7 +289,7 @@ footer .flex-container .socials {
 }
 
 .graytainer {
-  background: #ff334b;
+  background: rgb(85, 77, 229);
   height: 300px;
   width: 100%;
 }
@@ -409,7 +409,7 @@ footer .flex-container .socials {
   transform: scale(1.2);
 }
 .home-body .home-footer .flex-container .socials a:hover svg path {
-  fill: #ff334b;
+  fill: rgb(85, 77, 229);
 }
 
 .work-body .img {
@@ -541,13 +541,19 @@ footer .flex-container .socials {
   max-width: 600px;
 }
 .work-body .project3 .img {
-  height: 350px;
+  height: 250px;
   width: 100%;
-  background: #c4c4c4;
+}
+.work-body .project3 .img a {
+  display: block;
+  background: url("../img/work/devjobs-desktop.png");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 @media (min-width: 1025px) {
   .work-body .project3 .img {
-    height: 250px;
+    height: 350px;
   }
 }
 .work-body .project4 {
@@ -602,6 +608,10 @@ footer .flex-container .socials {
   max-width: 730px;
   text-align: left;
   position: relative;
+  padding-left: 100px;
+}
+.about-body section .text-group p {
+  padding-left: 20px;
 }
 .about-body .show-more {
   position: absolute;
@@ -650,7 +660,7 @@ footer .flex-container .socials {
 }
 .about-body .skills .skill i {
   font-size: 24px;
-  color: #ff334b;
+  color: rgb(85, 77, 229);
 }
 .about-body .skills .skill p {
   margin: 0 20px;
@@ -727,7 +737,7 @@ footer .flex-container .socials {
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   }
   .contact-body main .socials a:hover svg path {
-    fill: #ff334b;
+    fill: rgb(85, 77, 229);
   }
 }
 .contact-body main .email {
@@ -773,7 +783,7 @@ footer .flex-container .socials {
 .contact-body main form button {
   border: none;
   border-radius: 5px;
-  background: #ff334b;
+  background: rgb(85, 77, 229);
   color: white;
   font-weight: 600;
   font-size: 18px;
